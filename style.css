@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1b3926; /* Updated background color */
+    color: #ddeedf; /* Updated text color for better contrast */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    max-width: 800px;
+    padding: 40px;
+    background-color: #91c49d; /* Box color */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    max-width: 200px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #1b3926; /* Text color */
+}
+
+.content {
+    font-size: 1em; /* Smaller text */
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: #1b3926; /* Text color */
+}
+
+.vision, .bridge {
+    font-weight: 700;
+    margin-top: 20px;
+    color: #1b3926; /* Text color */
+}
+
+a {
+    color: #0000ff; /* Blue link color */
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    margin-top: 30px;
+    font-size: 0.9em;
+    color: #1b3926; /* Text color */
+}
+
+footer .disclaimer {
+    font-size: 0.7em; /* Smaller font size */
+    color: #666; /* Lighter color */
+    margin-top: 10px;
+}
