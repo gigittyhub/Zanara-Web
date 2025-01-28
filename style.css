@@ -3,8 +3,8 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Arial', sans-serif;
-    background-color: #003300; /* Darkest green background */
-    color: #004d00; /* Dark green text for contrast */
+    background-color: #112717; /* Dark green background */
+    color: #112717; /* Dark green text for contrast */
     text-align: center; /* Center align text by default */
     line-height: 1.6; /* Improve readability */
     font-size: 16px; /* Base font size */
@@ -13,63 +13,50 @@ body {
 /* Container Styles */
 .container {
     padding: 20px;
-    max-width: 1200px;
+    max-width: 800px; /* Tighter width for desktop */
     margin: 0 auto;
-}
-
-/* Header Styles */
-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    background-color: #004d00; /* Slightly lighter dark green for header */
-    color: #e0e0e0; /* Light gray text for contrast */
-}
-
-/* Logo Styles */
-.logo {
-    max-width: 200px; /* Default size for desktop */
-    height: auto;
-    margin-bottom: 20px;
 }
 
 /* Light Green Box Styles */
 .light-green-box {
-    background-color: #99cc99; /* Light green background */
+    background-color: #a1d4ac; /* Light green background */
     padding: 20px;
     margin: 20px 0;
-    border-radius: 5px; /* Rounded corners */
-    color: #004d00; /* Dark green text for contrast */
+    border-radius: 10px; /* Rounded corners */
+    color: #112717; /* Dark green text for contrast */
     text-align: left; /* Left-align text inside the box */
+}
+
+.light-green-box .logo {
+    max-width: 150px; /* Logo size */
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.light-green-box h1 {
+    font-size: 1.8em; /* Larger font size for title */
+    margin-bottom: 15px;
+    color: #112717; /* Dark green text for title */
 }
 
 .light-green-box p {
     margin: 15px 0;
     line-height: 1.6; /* Improve line spacing */
     font-size: 1em; /* Consistent paragraph font size */
+    color: #112717; /* Dark green text for body */
 }
 
-/* Content Styles */
-.content {
-    text-align: left; /* Left-align text for better readability */
-    margin: 20px 0;
-    padding: 0 20px; /* Add padding for better spacing */
-    color: #004d00; /* Dark green text for contrast */
+.light-green-box .fine-print-title {
+    font-size: 0.9em; /* Smaller font size for fine print title */
+    color: #4f4f4f; /* Grey fine print title */
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
-.content p {
-    margin: 15px 0;
-    line-height: 1.6; /* Improve line spacing */
-    font-size: 1em; /* Consistent paragraph font size */
-}
-
-.vision, .bridge {
-    font-weight: bold;
-    text-align: center; /* Center align specific headings */
-    font-size: 1.5em; /* Larger font size for headings */
-    margin: 20px 0; /* Add spacing around headings */
-    color: #004d00; /* Dark green text for contrast */
+.light-green-box .fine-print-body {
+    font-size: 0.8em; /* Smaller font size for fine print body */
+    color: #6d6d6d; /* Grey fine print body */
+    line-height: 1.4; /* Improve readability */
 }
 
 /* Call to Action Button Styles */
@@ -77,8 +64,8 @@ header {
     display: inline-block;
     padding: 12px 24px;
     margin: 20px 0;
-    background-color: #004d00; /* Slightly lighter dark green for button */
-    color: #e0e0e0; /* Light gray text for contrast */
+    background-color: #112717; /* Dark green background for button */
+    color: #ffffff; /* White text for contrast */
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
@@ -87,17 +74,17 @@ header {
 }
 
 .cta-button:hover {
-    background-color: #003300; /* Darker green on hover */
+    background-color: #0a1a0f; /* Darker green on hover */
 }
 
 /* Footer Styles */
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #004d00; /* Slightly lighter dark green for footer */
+    background-color: #112717; /* Dark green background for footer */
     margin-top: 20px;
     font-size: 0.9em; /* Smaller font size for footer */
-    color: #999999; /* Grey fine print text */
+    color: #6d6d6d; /* Grey fine print text */
 }
 
 footer .disclaimer {
@@ -112,25 +99,20 @@ footer .disclaimer {
         font-size: 14px; /* Slightly smaller font size for mobile */
     }
 
-    .logo {
-        max-width: 150px; /* Smaller size for mobile */
-    }
-
-    header {
-        padding: 10px;
+    .container {
+        padding: 10px; /* Tighter padding for mobile */
     }
 
     .light-green-box {
         padding: 15px; /* Adjust padding for mobile */
     }
 
-    .content {
-        padding: 0 10px;
-        text-align: left; /* Left-align text for mobile readability */
+    .light-green-box .logo {
+        max-width: 120px; /* Smaller logo for mobile */
     }
 
-    .vision, .bridge {
-        font-size: 1.2em; /* Slightly smaller headings for mobile */
+    .light-green-box h1 {
+        font-size: 1.5em; /* Smaller title for mobile */
     }
 
     .cta-button {
