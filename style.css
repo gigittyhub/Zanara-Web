@@ -3,8 +3,8 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Arial', sans-serif;
-    background-color: #112717; /* Dark green background */
-    color: #112717; /* Dark green text for contrast */
+    background-color: #063724; /* New background color */
+    color: #063724; /* New text color */
     text-align: center; /* Center align text by default */
     line-height: 1.6; /* Improve readability */
     font-size: 16px; /* Base font size */
@@ -23,74 +23,81 @@ body {
     padding: 20px;
     margin: 20px 0;
     border-radius: 10px; /* Rounded corners */
-    color: #112717; /* Dark green text for contrast */
-    text-align: left; /* Left-align text inside the box */
+    color: #063724; /* New text color */
+    text-align: justify; /* Justify all text */
 }
 
 .light-green-box .logo {
     max-width: 150px; /* Logo size */
     height: auto;
-    margin-bottom: 20px;
+    margin: 0 auto 20px; /* Center logo */
+    display: block;
 }
 
 .light-green-box h1 {
     font-size: 1.8em; /* Larger font size for title */
     margin-bottom: 15px;
-    color: #112717; /* Dark green text for title */
+    text-align: center; /* Center align heading */
+    color: #063724; /* New text color */
 }
 
 .light-green-box p {
     margin: 15px 0;
     line-height: 1.6; /* Improve line spacing */
     font-size: 1em; /* Consistent paragraph font size */
-    color: #112717; /* Dark green text for body */
+    color: #063724; /* New text color */
 }
 
-.light-green-box .fine-print-title {
-    font-size: 0.9em; /* Smaller font size for fine print title */
-    color: #4f4f4f; /* Grey fine print title */
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
-
-.light-green-box .fine-print-body {
-    font-size: 0.8em; /* Smaller font size for fine print body */
-    color: #6d6d6d; /* Grey fine print body */
-    line-height: 1.4; /* Improve readability */
+.light-green-box .vision, .light-green-box .bridge {
+    font-weight: bold;
+    text-align: center; /* Center align specific headings */
+    font-size: 1.5em; /* Larger font size for headings */
+    margin: 20px 0; /* Add spacing around headings */
+    color: #063724; /* New text color */
 }
 
 /* Call to Action Button Styles */
 .cta-button {
-    display: inline-block;
+    display: block; /* Make button block-level */
+    width: 50%; /* Narrower button */
     padding: 12px 24px;
-    margin: 20px 0;
-    background-color: #112717; /* Dark green background for button */
+    margin: 20px auto; /* Center button */
+    background-color: #063724; /* New background color */
     color: #ffffff; /* White text for contrast */
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
     font-size: 1em; /* Consistent button font size */
     transition: background-color 0.3s ease; /* Smooth hover effect */
+    text-align: center; /* Center button text */
 }
 
 .cta-button:hover {
-    background-color: #0a1a0f; /* Darker green on hover */
+    background-color: #05281d; /* Darker green on hover */
 }
 
-/* Footer Styles */
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #112717; /* Dark green background for footer */
+/* Fine Print Styles */
+.fine-print-title {
+    font-size: 0.8em; /* Smaller font size for fine print title */
+    color: #4f4f4f; /* Grey fine print title */
     margin-top: 20px;
-    font-size: 0.9em; /* Smaller font size for footer */
-    color: #6d6d6d; /* Grey fine print text */
+    margin-bottom: 10px;
+    text-align: center; /* Center align fine print title */
 }
 
-footer .disclaimer {
-    text-align: justify; /* Justify text for disclaimers */
-    margin: 10px 0;
+.fine-print-body {
+    font-size: 0.7em; /* Smaller font size for fine print body */
+    color: #6d6d6d; /* Grey fine print body */
     line-height: 1.4; /* Improve readability */
+    text-align: justify; /* Justify fine print body */
+}
+
+/* Footer Text Styles */
+.footer-text {
+    font-size: 0.8em; /* Smaller font size for footer text */
+    color: #6d6d6d; /* Grey footer text */
+    text-align: center; /* Center align footer text */
+    margin-top: 20px;
 }
 
 /* Media Queries for Mobile */
@@ -116,12 +123,6 @@ footer .disclaimer {
     }
 
     .cta-button {
-        width: 100%;
-        box-sizing: border-box;
-        padding: 10px 20px; /* Adjust padding for mobile */
-    }
-
-    footer .disclaimer {
-        text-align: left; /* Left-align disclaimer text for mobile */
+        width: 80%; /* Wider button for mobile */
     }
 }
