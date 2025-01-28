@@ -1,64 +1,128 @@
-/* Add this new CSS for the animated hourglass */
-.hourglass-icon {
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    margin-bottom: 20px; /* Space below the hourglass */
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #063724; /* New background color */
+    color: #063724; /* New text color */
+    text-align: center; /* Center align text by default */
+    line-height: 1.6; /* Improve readability */
+    font-size: 16px; /* Base font size */
 }
 
-.hourglass {
-    width: 40px; /* Size of the hourglass */
-    height: 60px; /* Height of the hourglass */
-    position: relative;
-    animation: rotateHourglass 4s infinite; /* Rotate animation */
+/* Container Styles */
+.container {
+    padding: 20px;
+    max-width: 800px; /* Tighter width for desktop */
+    margin: 0 auto;
 }
 
-.hourglass::before,
-.hourglass::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
+/* Light Green Box Styles */
+.light-green-box {
+    background-color: #a1d4ac; /* Light green background */
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px; /* Rounded corners */
+    color: #063724; /* New text color */
+    text-align: justify; /* Justify all text */
 }
 
-.hourglass::before {
-    border-bottom: 30px solid #063724; /* Top half of the hourglass */
-    top: 0;
+.light-green-box .logo {
+    max-width: 250px; /* Larger logo size for desktop */
+    height: auto;
+    margin: 0 auto 30px; /* Center logo and add more space below */
+    display: block;
 }
 
-.hourglass::after {
-    border-top: 30px solid #063724; /* Bottom half of the hourglass */
-    bottom: 0;
-    animation: fillHourglass 4s infinite; /* Sand filling animation */
+.light-green-box h1 {
+    font-size: 1.8em; /* Larger font size for title */
+    margin-bottom: 25px; /* Add more space below the heading */
+    text-align: center; /* Center align heading */
+    color: #063724; /* New text color */
 }
 
-@keyframes rotateHourglass {
-    0%, 100% {
-        transform: rotate(0deg);
+.light-green-box p {
+    margin: 15px 0;
+    line-height: 1.6; /* Improve line spacing */
+    font-size: 1em; /* Consistent paragraph font size */
+    color: #063724; /* New text color */
+}
+
+.light-green-box .vision, .light-green-box .bridge {
+    font-weight: bold;
+    text-align: center; /* Center align specific headings */
+    font-size: 1.5em; /* Larger font size for headings */
+    margin: 20px 0; /* Add spacing around headings */
+    color: #063724; /* New text color */
+}
+
+/* Call to Action Button Styles */
+.cta-button {
+    display: block; /* Make button block-level */
+    width: 30%; /* Narrower button */
+    padding: 12px 24px;
+    margin: 20px auto; /* Center button */
+    background-color: #063724; /* New background color */
+    color: #ffffff; /* White text for contrast */
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1em; /* Consistent button font size */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+    text-align: center; /* Center button text */
+}
+
+.cta-button:hover {
+    background-color: #05281d; /* Darker green on hover */
+}
+
+/* Fine Print Styles */
+.fine-print-title {
+    font-size: 0.8em; /* Smaller font size for fine print title */
+    color: #4f4f4f; /* Grey fine print title */
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center; /* Center align fine print title */
+}
+
+.fine-print-body {
+    font-size: 0.7em; /* Smaller font size for fine print body */
+    color: #6d6d6d; /* Grey fine print body */
+    line-height: 1.4; /* Improve readability */
+    text-align: center; /* Center align fine print body */
+}
+
+/* Footer Text Styles */
+.footer-text {
+    font-size: 0.8em; /* Smaller font size for footer text */
+    color: #6d6d6d; /* Grey footer text */
+    text-align: center; /* Center align footer text */
+    margin-top: 20px;
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Slightly smaller font size for mobile */
     }
-    50% {
-        transform: rotate(180deg);
-    }
-}
 
-@keyframes fillHourglass {
-    0%, 100% {
-        height: 0;
+    .container {
+        padding: 10px; /* Tighter padding for mobile */
     }
-    50% {
-        height: 30px; /* Simulate sand filling */
-    }
-}
-/* Add this new rule for the hourglass icon */
-.light-green-box .hourglass-icon {
-    text-align: center; /* Center the icon */
-    margin-bottom: 20px; /* Space below the hourglass */
-}
 
-.light-green-box .hourglass-icon svg {
-    width: 40px; /* Adjust size as needed */
-    height: 40px; /* Adjust size as needed */
-    fill: #063724; /* Match the background color */
+    .light-green-box {
+        padding: 15px; /* Adjust padding for mobile */
+    }
+
+    .light-green-box .logo {
+        max-width: 200px; /* Larger logo size for mobile */
+    }
+
+    .light-green-box h1 {
+        font-size: 1.5em; /* Smaller title for mobile */
+    }
+
+    .cta-button {
+        width: 60%; /* Wider button for mobile */
+    }
 }
