@@ -59,7 +59,7 @@ body {
 /* Call to Action Button Styles */
 .cta-button {
     display: block; /* Make button block-level */
-    width: 50%; /* Narrower button */
+    width: 30%; /* Narrower button */
     padding: 12px 24px;
     margin: 20px auto; /* Center button */
     background-color: #063724; /* New background color */
@@ -89,7 +89,7 @@ body {
     font-size: 0.7em; /* Smaller font size for fine print body */
     color: #6d6d6d; /* Grey fine print body */
     line-height: 1.4; /* Improve readability */
-    text-align: justify; /* Justify fine print body */
+    text-align: center; /* Center align fine print body */
 }
 
 /* Footer Text Styles */
@@ -123,6 +123,6 @@ body {
     }
 
     .cta-button {
-        width: 80%; /* Wider button for mobile */
+        width: 60%; /* Wider button for mobile */
     }
 }
