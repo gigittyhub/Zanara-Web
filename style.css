@@ -58,8 +58,8 @@ header {
     display: inline-block;
     padding: 12px 24px;
     margin: 20px 0;
-    background-color: #004d00;
-    color: #ffffff;
+    background-color: #004d00; /* Slightly darker green for button */
+    color: #ffffff; /* White text for contrast */
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
@@ -68,7 +68,7 @@ header {
 }
 
 .cta-button:hover {
-    background-color: #003300;
+    background-color: #003300; /* Darker green on hover */
 }
 
 /* Footer Styles */
