@@ -28,7 +28,7 @@ body {
 }
 
 .light-green-box .logo {
-    max-width: 150px; /* Logo size */
+    max-width: 200px; /* Larger logo size */
     height: auto;
     margin: 0 auto 20px; /* Center logo */
     display: block;
@@ -115,7 +115,7 @@ body {
     }
 
     .light-green-box .logo {
-        max-width: 120px; /* Smaller logo for mobile */
+        max-width: 150px; /* Slightly smaller logo for mobile */
     }
 
     .light-green-box h1 {
