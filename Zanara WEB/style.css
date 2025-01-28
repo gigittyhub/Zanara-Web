@@ -2,10 +2,12 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     background-color: #006400; /* Dark green background */
     color: #ffffff; /* White text for contrast */
     text-align: center; /* Center align text by default */
+    line-height: 1.6; /* Improve readability */
+    font-size: 16px; /* Base font size */
 }
 
 /* Container Styles */
@@ -33,34 +35,40 @@ header {
 
 /* Content Styles */
 .content {
-    text-align: justify; /* Justify text for paragraphs */
+    text-align: left; /* Left-align text for better readability */
     margin: 20px 0;
+    padding: 0 20px; /* Add padding for better spacing */
 }
 
 .content p {
     margin: 15px 0;
-    line-height: 1.6;
+    line-height: 1.6; /* Improve line spacing */
+    font-size: 1em; /* Consistent paragraph font size */
 }
 
 .vision, .bridge {
     font-weight: bold;
     text-align: center; /* Center align specific headings */
+    font-size: 1.5em; /* Larger font size for headings */
+    margin: 20px 0; /* Add spacing around headings */
 }
 
 /* Call to Action Button Styles */
 .cta-button {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 12px 24px;
     margin: 20px 0;
-    background-color: #004d00;
-    color: #ffffff;
+    background-color: #004d00; /* Slightly darker green for button */
+    color: #ffffff; /* White text for contrast */
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
+    font-size: 1em; /* Consistent button font size */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
 }
 
 .cta-button:hover {
-    background-color: #003300;
+    background-color: #003300; /* Darker green on hover */
 }
 
 /* Footer Styles */
@@ -69,16 +77,21 @@ footer {
     padding: 20px;
     background-color: #004d00; /* Slightly darker green for footer */
     margin-top: 20px;
+    font-size: 0.9em; /* Smaller font size for footer */
 }
 
 footer .disclaimer {
     text-align: justify; /* Justify text for disclaimers */
     margin: 10px 0;
-    font-size: 0.9em;
+    line-height: 1.4; /* Improve readability */
 }
 
 /* Media Queries for Mobile */
 @media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Slightly smaller font size for mobile */
+    }
+
     .logo {
         max-width: 150px; /* Smaller size for mobile */
     }
@@ -89,10 +102,20 @@ footer .disclaimer {
 
     .content {
         padding: 0 10px;
+        text-align: left; /* Left-align text for mobile readability */
+    }
+
+    .vision, .bridge {
+        font-size: 1.2em; /* Slightly smaller headings for mobile */
     }
 
     .cta-button {
         width: 100%;
         box-sizing: border-box;
+        padding: 10px 20px; /* Adjust padding for mobile */
+    }
+
+    footer .disclaimer {
+        text-align: left; /* Left-align disclaimer text for mobile */
     }
 }
