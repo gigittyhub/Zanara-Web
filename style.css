@@ -28,7 +28,7 @@ body {
 }
 
 .light-green-box .logo {
-    max-width: 200px; /* Larger logo size */
+    max-width: 250px; /* Larger logo size */
     height: auto;
     margin: 0 auto 20px; /* Center logo */
     display: block;
@@ -36,9 +36,15 @@ body {
 
 .light-green-box h1 {
     font-size: 1.8em; /* Larger font size for title */
-    margin-bottom: 15px;
+    margin-bottom: 30px; /* Add more space below "Coming Soon" */
     text-align: center; /* Center align heading */
     color: #063724; /* New text color */
+}
+
+.light-green-box .hourglass-icon {
+    font-size: 2em; /* Larger hourglass emoji */
+    margin-bottom: 20px; /* Space below the hourglass */
+    display: block; /* Ensure it’s on its own line */
 }
 
 .light-green-box p {
@@ -115,7 +121,7 @@ body {
     }
 
     .light-green-box .logo {
-        max-width: 150px; /* Slightly smaller logo for mobile */
+        max-width: 200px; /* Larger logo for mobile */
     }
 
     .light-green-box h1 {
